@@ -15,7 +15,7 @@ import com.elberthbrandao.integrations.services.EmailService;
 public class EmailController {
 	
 	@Autowired
-	EmailService service;
+	private EmailService service;
 
 	@PostMapping
 	public ResponseEntity<Void> send(@RequestBody EmailDTO dto) {
